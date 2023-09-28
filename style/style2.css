@@ -125,7 +125,7 @@ span{
         padding-right:10px;
         padding-left:10px;
         padding-bottom:10px;
-        ;
+        max-width: 100%;
         }
 
 
@@ -137,7 +137,8 @@ span{
         }
 
         main > p, main > h1{
-            text-align: center
+            text-align: center;
+            font-size:1em;
         }
 
         main > .contact{
@@ -159,7 +160,8 @@ span{
     body{
         display: flex;
         max-width: 100%;
-        overflow: hidden;
+
+        overflow-x: hidden;
 
     }
     
