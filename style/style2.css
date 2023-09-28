@@ -113,3 +113,51 @@ span{
     font-size: 1.7em;
     color: red;
 }
+
+@media screen and (max-width:500px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:10px;
+        padding-right:10px;
+        padding-left:10px;
+        padding-bottom:10px;
+        ;
+        }
+
+
+        main > img{
+            transform: translate(0, 0);
+            width: 50%;
+            border-color: transparent;
+        }
+
+        main > p, main > h1{
+            text-align: center
+        }
+
+        main > .contact{
+            width: 100%;
+            transform: translate(0, 0);
+            border-color: transparent;
+        }
+        main > .retour{
+            transform: translate(0, 0);
+            background-color: white;
+            width: 30%;
+        }
+        main > .retour > a{
+            color:black;
+        }
+        main > .retour > a:visited{
+            color:black;
+        }
+    body{
+        display: flex;
+
+    }
+    
+}
