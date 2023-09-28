@@ -132,6 +132,7 @@ span{
         main > img{
             transform: translate(0, 0);
             width: 50%;
+            border-radius: 66%;
             border-color: transparent;
         }
 
@@ -157,6 +158,8 @@ span{
         }
     body{
         display: flex;
+        max-width: 100%;
+        overflow: hidden;
 
     }
     
