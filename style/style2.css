@@ -135,7 +135,6 @@ span.red{
         padding-left:10px;
         padding-bottom:10px;
         max-width: 100%;
-        overflow: hidden;
         border: none;
         }
 
@@ -177,7 +176,6 @@ span.red{
     body{
         display: flex;
         max-width: 100%;
-        /* overflow: hidden; */
         width: 100%;
         
         
