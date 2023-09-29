@@ -109,6 +109,20 @@ main > p{
     color:black;
 }
 
+span.color{
+    font-size: 1.2em;
+    color:white;
+
+}
+
+span.color:hover{
+    color:red;
+    cursor: none;
+    
+}
+
+
+
 span{
     font-size: 1.7em;
     color: red;
@@ -126,6 +140,7 @@ span{
         padding-left:10px;
         padding-bottom:10px;
         max-width: 100%;
+        overflow: hidden;
         }
 
 
@@ -153,6 +168,8 @@ span{
         }
         main > .retour > a{
             color:black;
+            font-size: 1em;
+
         }
         main > .retour > a:visited{
             color:black;
@@ -160,9 +177,9 @@ span{
     body{
         display: flex;
         max-width: 100%;
-
-        overflow-x: hidden;
+        overflow: hidden;
         
     }
-    
+    .acceuil h2{
+        padding-top: 10%;
 }
