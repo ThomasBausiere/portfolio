@@ -118,7 +118,7 @@ span.color:hover{
 
 
 
-span{
+span.red{
     font-size: 1.7em;
     color: red;
 }
@@ -168,7 +168,7 @@ span{
             font-size: 1em;
         }
 
-        main > p > span {
+        main > p > .red {
             font-size: 1em;
         }
         main > .retour > a:visited{
@@ -177,7 +177,7 @@ span{
     body{
         display: flex;
         max-width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
         width: 100%;
         
         
