@@ -41,7 +41,6 @@ main > h1{
     grid-column: 2;
     padding-top: 10px;
     font-size: 1.4em;
-
 }
 
 main > p{
@@ -61,10 +60,6 @@ main > p{
     transform: translate(-50%, 30%);
     border-radius: 25px;
 }
-.retour a{
-
-}
-
 
 .contact{
     grid-row: 3;
@@ -141,7 +136,9 @@ span{
         padding-bottom:10px;
         max-width: 100%;
         overflow: hidden;
+        border: none;
         }
+
 
 
         main > img{
@@ -157,7 +154,7 @@ span{
         }
 
         main > .contact{
-            width: 100%;
+            width: 80%;
             transform: translate(0, 0);
             border-color: transparent;
         }
@@ -169,7 +166,10 @@ span{
         main > .retour > a{
             color:black;
             font-size: 1em;
+        }
 
+        main > p > span {
+            font-size: 1em;
         }
         main > .retour > a:visited{
             color:black;
@@ -178,7 +178,12 @@ span{
         display: flex;
         max-width: 100%;
         overflow: hidden;
+        width: 100%;
         
+        
+    }
+    .color{
+        font-size: 1em;    
     }
 
 
