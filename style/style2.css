@@ -11,8 +11,8 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     display: grid;
-    grid-template-columns:30% 40% 30% ;
-    grid-template-rows:30% 40% 30% ;
+    grid-template-columns:25% 50% 25% ;
+    grid-template-rows:20% 60% 20% ;
 }
 
 main{
@@ -20,9 +20,9 @@ main{
     grid-row: 2;
     grid-column: 2;
     display: grid;
-    grid-template-columns: 20% 70% 10%;
-    grid-template-rows: 20% 50% 30%;
-    background-color: rgba(15, 18, 21, 0.8);
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 15% 65% 30%;
+    background-color: rgba(15, 18, 21, 0.4);
     border-radius: 20px;
     border: 5px solid white
 }
@@ -31,9 +31,10 @@ main > img{
     grid-row:1 ;
     grid-column:1 ;
     width: 200px;
-    transform: translate(-50%, -50%);
+    transform: translate(-70%, -50%);
     border-radius: 20px;
-    border: 5px solid white
+    border: 5px solid white;
+    z-index: 1;
 }
 
 main > h1{
@@ -47,6 +48,7 @@ main > p{
     grid-row:2 ;
     grid-column:2 ;
     text-align: justify;
+    line-height: 2rem;
 }
 .retour{
     display: flex;
@@ -104,26 +106,58 @@ main > p{
     color:black;
 }
 
-span.color{
+span.color, span.color_red, span.color_orange,span.color_yellow, span.color_green {
     font-size: 1.2em;
     color:white;
 
 }
 
-span.color:hover{
+ span.color_red:hover {
     color:red;
     cursor: none;
-    
-}
+    font-size: 1.4em;
 
+    
+}span.color_orange:hover {
+    color:orange;
+    cursor: none;
+    font-size: 1.4em;
+
+    
+}span.color_yellow:hover {
+    color:yellow;
+    cursor: none;
+    font-size: 1.4em;
+
+    
+}span.color_green:hover {
+    color:green;
+    cursor: none;
+    font-size: 1.4em;
+}
 
 
 span.red{
-    font-size: 1.7em;
+    font-size: 1.3em;
     color: red;
+    background-color: black;
 }
+@media screen and (max-width:1100px){
+    .contact{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(0,  0);
 
-@media screen and (max-width:500px){
+    }
+    .retour{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(0,  0);
+    }
+}
+@media screen and (max-width:800px){
 
     main{
         display: flex;
@@ -151,7 +185,9 @@ span.red{
             text-align: center;
             font-size:1em;
         }
-
+        .contact, .retour{
+            position: static;
+        }
         main > .contact{
             width: 80%;
             transform: translate(0, 0);
@@ -169,6 +205,7 @@ span.red{
 
         main > p > .red {
             font-size: 1em;
+            
         }
         main > .retour > a:visited{
             color:black;
@@ -180,9 +217,10 @@ span.red{
         
         
     }
-    .color{
+    .color_red, span.color_red, span.color_orange,span.color_yellow, span.color_green{
         font-size: 1em;    
     }
 
 
 }
+
