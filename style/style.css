@@ -53,7 +53,7 @@
   
   .navigation a {
     text-decoration: none;
-    color: #e25a0b;
+    color: #a75b2f;
     padding: 6px 15px;
     border-radius: 2.4px;
     margin: 0 10px;
@@ -83,7 +83,7 @@
 .acceuil h2{
   padding-top: 250px;
   font-size:20px;
-  color: #e25a0b;
+  color: #2f85a7;
   
 }
 
@@ -105,8 +105,8 @@
     text-decoration: none;
     padding: 6px 15px;
     border-radius: 2.4px;
-    border: 2px solid #e25a0b;
-    color:#e25a0b;
+    border: 2px solid #2f85a7;
+    color:#2f85a7;
     transition: all 0.2s ease-in-out;
     width: fit-content;
 }
@@ -115,7 +115,7 @@
   height: 30vh;
 }
 .acceuil .btn:hover{
-  background: #e25a0b;
+  background: #2f85a7;;
   color: #e6e2e1;
 }
 /* Secondes partie de la page */
@@ -135,15 +135,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-
   margin:5% 3%;
   max-width:100%;
   width: 30%;
   max-height: 70vh;
-  color:#e6e2e1;
+  color:#2f85a7;
   height: auto;
-  border: 2px solid white;
+  border: 2px solid #2f85a7;;
   border-radius: 10px;
   background-color: #282a2d;
   padding-top:20px;
@@ -166,7 +164,7 @@
 }
 
 .content h1{
-  color:#e25a0b;
+  color:#2f85a7;
   text-align: center;
   
 }
@@ -178,16 +176,17 @@
 }
 
 .content > a{
-  border:3px solid white;
+  border:3px solid #2f85a7;
   background-color: transparent;
   border-radius: 10px;
   width:fit-content;
   padding-left:10px;
   padding-right:10px;
+  color: #2f85a7;
   
 }
 .content > a:hover{
-background-color:white;
+background-color:#2f85a7;
 color:#0f1215;
   
 }
@@ -209,11 +208,11 @@ footer {
 /* CSS */
 .button-49,
 .button-49:after{
-  width: fit-content;
+  width: 10%;
   height: fit-content; 
   font-size: 20px;
   padding-left: 1%;
-  background: linear-gradient( transparent 5%, #ff3c01 5%);
+  background: linear-gradient( transparent 5%, #2f85a7 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -243,8 +242,7 @@ footer {
   clip-path: var(--slice-0);
 }
 a:-webkit-any-link {
-  color: white;
-  cursor: pointer;
+    cursor: pointer;
   text-decoration: none;
 }
 .button-49:hover:after {
