@@ -3,6 +3,19 @@
     padding: 0;
     margin: 0;
   }
+  :root{
+    --color1:#6AC8A9;
+    --color2:#05251A;
+    font-family: "coolvetica";
+  }
+:root ul{
+  list-style-type: none;
+
+}
+  @font-face {
+    font-family: "coolvetica";
+    src: url("../src/police/coolvetica\ rg.otf");
+  } 
   
   body {
     display: flex;
@@ -83,7 +96,7 @@
 .acceuil h2{
   padding-top: 250px;
   font-size:20px;
-  color: #2f85a7;
+  color: var(--color1);
   
 }
 
@@ -105,8 +118,8 @@
     text-decoration: none;
     padding: 6px 15px;
     border-radius: 2.4px;
-    border: 2px solid #2f85a7;
-    color:#2f85a7;
+    border: 2px solid var(--color1);
+    color:var(--color1);
     transition: all 0.2s ease-in-out;
     width: fit-content;
 }
@@ -115,7 +128,7 @@
   height: 30vh;
 }
 .acceuil .btn:hover{
-  background: #2f85a7;;
+  background: var(--color1);
   color: #e6e2e1;
 }
 /* Secondes partie de la page */
@@ -124,7 +137,7 @@
 .container{
   display: flex;
   flex-wrap: wrap;
-  margin:5% 10%;
+  margin:5% 5%;
   justify-content: space-around;
   
 
@@ -134,16 +147,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   margin:5% 3%;
   max-width:100%;
-  width: 30%;
+  width: 40%;
   max-height: 70vh;
-  color:#2f85a7;
+  color:white;
   height: auto;
-  border: 2px solid #2f85a7;;
+  /* border: 2px solid var(--color1); */
   border-radius: 10px;
-  background-color: #282a2d;
+  /* background-color: #282a2d; */
   padding-top:20px;
   padding-right:15px;
   padding-left:15px;
@@ -158,13 +171,14 @@
   margin-top: 2vh;
   margin-bottom: 2vh;
   width:100%;
-  max-width:50vh ;
+  max-width:100vh ;
   height: auto;  
   border-radius: 20px;
 }
 
 .content h1{
-  color:#2f85a7;
+  color:white;
+
   text-align: center;
   
 }
@@ -176,17 +190,17 @@
 }
 
 .content > a{
-  border:3px solid #2f85a7;
+  border:3px solid var(--color1);
   background-color: transparent;
   border-radius: 10px;
   width:fit-content;
   padding-left:10px;
   padding-right:10px;
-  color: #2f85a7;
+  color: var(--color1);
   
 }
 .content > a:hover{
-background-color:#2f85a7;
+background-color:var(--color1);
 color:#0f1215;
   
 }
@@ -197,29 +211,64 @@ color:#0f1215;
 
 
 footer {
-	background-color: #333;
+	background-color: var(--color2);
 	color: #fff;
 	padding: 10px;
 	text-align: center;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
+.container1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  font-size: 1.5rem;
+  text-decoration: none;
 
+}
+
+.legalmentions{
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  align-items: end;
+
+}
+.logof{
+  max-width: 20%;
+}
+.logof img{
+  width: 100%;
+  height: auto;
+}
 
 /* CSS */
 .button-49,
 .button-49:after{
-  width: 10%;
-  height: fit-content; 
-  font-size: 20px;
-  padding-left: 1%;
-  background: linear-gradient( transparent 5%, #2f85a7 5%);
-  border: 0;
+  width: 30%;
+  height: 10%; 
+  font-size: 20px;  
+  background: linear-gradient( transparent 5%, var(--color1) 5%);  
   color: #fff;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #d80707a4;
+  box-shadow: 6px 0px 0px #05251A;
   outline: transparent;
   position: relative;
   touch-action: manipulation;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid var(--color2);
+  border-top: 0;
 }
 
 .button-49:after {
@@ -237,8 +286,8 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #dae9ea 3%, #edf0f0 5%, #e25a0b 5%);
-  text-shadow: -3px -3px 0px #30302b, 3px 3px 0px #00E6F6;
+  background: linear-gradient(45deg, transparent 3%, #dae9ea 3%, #edf0f0 5%, var(--color1) 5%);
+  text-shadow: -3px -3px 0px #30302b, 3px 3px 0px var(--color1);
   clip-path: var(--slice-0);
 }
 a:-webkit-any-link {
