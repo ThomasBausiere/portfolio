@@ -188,8 +188,11 @@
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
+.content a:first-child:hover{
+  background-color:transparent ;
+}
 
-.content > a{
+.content > a:last-child{
   border:3px solid var(--color1);
   background-color: transparent;
   border-radius: 10px;
@@ -199,6 +202,8 @@
   color: var(--color1);
   
 }
+
+
 .content > a:hover{
 background-color:var(--color1);
 color:#0f1215;
