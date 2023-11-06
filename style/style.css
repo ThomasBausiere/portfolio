@@ -369,6 +369,13 @@ a:-webkit-any-link {
   .prez{
     font-size: 1rem;
   }
+  footer{
+    height: 100vh;
+    font-size: 2.4em;
+  }
+  footer .container1{
+    flex-direction: column;
+  }
   
 }
 
