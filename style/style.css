@@ -428,6 +428,9 @@ a:-webkit-any-link {
 }
 
 @media screen and (max-width:500px) {
+  *{
+    overflow: hidden;
+  }
   .acceuil > h2{
     margin-top: 50%;
     padding: 0;
